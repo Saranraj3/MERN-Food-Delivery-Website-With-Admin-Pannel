@@ -7,7 +7,7 @@ import { MdAccountCircle } from "react-icons/md";
 function Navbar() {
     return (
         <div className='sticky top-0 z-50'>
-            <span className='flex mt-'>
+            <span className='flex'>
                 <SiIfood className='mt-1 ml-5 cursor-pointer text-blue-500 size-[1.5rem]' />
                 <h1 className=' ml-2 cursor-pointer text-4xl font-sedan font-bold text-blue-500'>Foody</h1>
             </span>
