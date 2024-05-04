@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sedan: ["Sedan SC"]
+        sedan: ["Sedan SC"],
+        Arimo:["Arimo"]
       }
     },
   },
