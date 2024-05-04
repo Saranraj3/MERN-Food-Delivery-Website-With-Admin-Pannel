@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext} from 'react'
 import { GrStar } from "react-icons/gr";
 import { RiStarLine } from "react-icons/ri";
 import { LuIndianRupee } from "react-icons/lu";
@@ -6,8 +6,7 @@ import { IoMdAdd } from "react-icons/io";
 import { FaMinus } from "react-icons/fa";
 import { Context } from '../../Context/Context';
 
-function FoodItemsFetch({ image, name, description, price }) {
-  const [count, setCount] = useState(0)
+function FoodItemsFetch({id, image, name, description, price }) {
   const {cartItems,AddToCart, RemoveFromCart} = useContext(Context);
 
 

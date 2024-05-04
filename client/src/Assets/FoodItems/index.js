@@ -26,6 +26,7 @@ let Food_List = [
         id: 1,
         image: chickenrice,
         name: 'Chicken Rice',
+        category:'Chicken',
         description: 'Chicken Rice Is The Best Rice In The World',
         price: '449'
     },
@@ -33,6 +34,7 @@ let Food_List = [
         id: 2,
         image: chickenbiriyani,
         name: 'Chicken Biriyani',
+        category:'Chicken',
         description: 'Chicken Biriyani Is The Best Biriyani In The World',
         price: '550'
     },
@@ -40,6 +42,7 @@ let Food_List = [
         id: 3,
         image: chickenstick,
         name: 'Chicken Stick Fry',
+        category:'Chicken',
         description: 'Chicken Stick Fry Is The Best Stick Fry In The World',
         price: '595'
     },
@@ -54,6 +57,7 @@ let Food_List = [
         id: 5,
         image: chickencurry,
         name: 'Chicken Curry',
+        category:'Chicken',
         description: 'Chicken Curry Is The Best Curry In The World',
         price: '499'
     },
@@ -61,6 +65,7 @@ let Food_List = [
         id: 6,
         image: chickenfriedrice,
         name: 'Chicken Fryed Rice',
+        category:'Chicken',
         description: 'Chicken Fryed Rice Is The Best Fryed Rice In The World',
         price: '600'
     },
@@ -68,6 +73,7 @@ let Food_List = [
         id: 7,
         image: chickenleg,
         name: 'Chicken Leg',
+        category:'Chicken',
         description: 'Chicken Leg Is The Best Leg In The World',
         price: '399'
     },
@@ -75,6 +81,7 @@ let Food_List = [
         id: 8,
         image: biffe,
         name: 'Biffe Fry',
+        category:'Biffe',
         description: 'Biffe Fry Is The Best Meat In The World',
         price: '400'
     },
@@ -82,6 +89,7 @@ let Food_List = [
         id: 9,
         image: buttermasaladosa,
         name: 'Butter Masala Dosa',
+        category:'Dosa',
         description: 'Butter Masala Dosa Is The Best Dosa In The World',
         price: '460'
     },
@@ -89,6 +97,7 @@ let Food_List = [
         id: 10,
         image: fryedrice,
         name: 'Fryed Rice',
+        category:'Rice',
         description: 'Fryed Rice Is The Best Fryed Rice In The World',
         price: '405'
     },
@@ -110,6 +119,7 @@ let Food_List = [
         id: 13,
         image: pancake,
         name: 'Pancake',
+        category:'Cake',
         description: 'Pancake Is The Best Swetest Cake In The World',
         price: '583'
     },
@@ -117,6 +127,7 @@ let Food_List = [
         id: 14,
         image: pizza,
         name: 'Pizza',
+        category:'Pizza',
         description: 'Pizza Is The Best Pizza In The World',
         price: '459'
     },
@@ -124,6 +135,7 @@ let Food_List = [
         id: 15,
         image: puttukadala,
         name: 'Puttu Kadala Curry',
+        category:'Puttu Kadala Curry',
         description: 'Puttu Kadala Curry Is The Best Kadala ',
         price: '410'
     },
@@ -131,6 +143,7 @@ let Food_List = [
         id: 16,
         image: vegitable,
         name: 'Vegitable Fryed Rice',
+        category:'Vegitable',
         description: 'Vegitable Fryed Rice Is The Best Vegitable Rice In The World',
         price: '509'
     },
@@ -139,6 +152,7 @@ let Food_List = [
         id: 17,
         image: puttuegg,
         name: 'Puttu Egg Curry',
+        category:'Puttu',
         description: 'Puttu Egg Curry Is The Best Egg Curry In The World',
         price: '300'
     },
@@ -159,11 +173,10 @@ let Food_List = [
     {
         id: 20,
         image: burger,
-        name: 'Biffe',
-        description: 'Biffe Fry Is The Best Meat In The World',
+        name: 'Burger',
+        description: 'Burger Is The Best Burger In The World',
         price: '400'
     },
-
 
 ]
 
