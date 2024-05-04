@@ -12,10 +12,11 @@ function FoodItemsFetch({ image, name, description, price }) {
   return (
     <div>
       <img className='w-[100%] rounded-lg' src={image} alt="" />
-      <button onClick={()=>setCount(prev=>prev-1)}><FaMinus /></button>
-      {count}
-      <button onClick={()=>setCount(prev=>prev+1)}><IoMdAdd /></button>
-
+      <div className='bg-white rounded-xl justify-center w-[4rem] mt-2 flex'>
+      <button onClick={()=>setCount(prev=>prev-1)}><FaMinus className='bg-white size-5 text-black'/></button>
+       <p className='bg-white text-black'>{count}</p>
+      <button onClick={()=>setCount(prev=>prev+1)}><IoMdAdd className='bg-white size-5 text-black'/></button>
+      </div>
       <h1>{name}</h1>
       <p className='flex text-orange-400'>
         <GrStar />
