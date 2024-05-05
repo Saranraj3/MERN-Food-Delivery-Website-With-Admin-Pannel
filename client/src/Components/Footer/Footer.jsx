@@ -8,7 +8,7 @@ import { FaRegCopyright } from "react-icons/fa";
 
 function Footer() {
     return (
-        <div className='mt-[5rem] md:mt-[10rem]'>
+        <div className='md:mt-[8rem]'>
             <div>
                 <span className='flex'>
                     <SiIfood className='mt-1 ml-5 cursor-pointer text-blue-500 size-[1.5rem]' />
@@ -24,7 +24,7 @@ function Footer() {
                     </ul>
                 </div>
             </div>
-            <div className='sm:mt-5 md:mt-[-9rem] md:mr-[35rem] text-center font-bold text-white '>
+            <div className='sm:mt-5 md:mt-[-9rem] md:ml-[33rem] text-center font-bold text-white '>
                 <h1 className='sm:text-xl cursor-pointer font-sedan'>Social Media</h1>
                 <ul className='sm:mt-2 md:mt-5 gap-2 flex justify-center'>
                     <FaFacebook className='md:mt-1 cursor-pointer hover:opacity-30 size-[2rem]' />
@@ -40,7 +40,7 @@ function Footer() {
                     <li className='font-Arimo cursor-pointer'>Email: www.foody@gmail.com</li>
                 </ul>
             </div>
-            <div className='sm:mt-2 md:mt-[6rem] text-white sm:text-sm font-Arimo font-bold text-center'>
+            <div className='sm:mt-2 sm:m-2 md:mt-[6rem] md:m-5 text-white sm:text-sm font-Arimo font-bold text-center'>
                 <p className=' cursor-pointer'>What is online delivery? Online food ordering is the process of placing a meal order through a website or app from a nearby restaurant or food cooperative. Many of them allow clients to maintain accounts with them in order to make regular ordering easier, much like ordering consumer products online.</p>
                 <div className='sm:mt-3 sm:text-white sm:justify-center flex'>
                     <FaRegCopyright className='sm:mt-[3px]' />
