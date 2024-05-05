@@ -13,7 +13,7 @@ function Navbar() {
         setNav(!nav)
     }
     return (
-        <div className='sm:h-[2rem] lg:h-[3rem] sticky top-0 z-50'>
+        <div className='sm:h-[2rem] lg:h-[3rem] sticky top-0 z-50 ' id='home'>
             <span className='flex'>
                 <SiIfood className='sm:mt-1 sm:ml-5 sm:size-[1.8rem] lg:mt-2 cursor-pointer text-blue-500' />
                 <h1 className='sm:text-2xl sm:ml-2 md:ml-2 md:text-3xl lg:mt-1 cursor-pointer font-sedan font-bold text-blue-500'>Foody</h1>
@@ -30,10 +30,10 @@ function Navbar() {
                 </ul>
             </div>
             <ul className='sm:invisible md:visible md:mt-[-2rem] md:gap-[2rem] lg:gap-[4rem] lg:text-lg xl:mr-[6rem] font-bold font-serif text-white cursor-pointer flex justify-center '>
-                <li className='hover:text-blue-500'>Home</li>
-                <li className='hover:text-blue-500'>Menu</li>
-                <li className='hover:text-blue-500'>Service</li>
-                <li className='hover:text-blue-500'>About</li>
+                <a href='/' className='hover:text-blue-500'>Home</a>
+                <a href='#menu' className='hover:text-blue-500'>Menu</a>
+                <a href='#service' className='hover:text-blue-500'>Service</a>
+                <a href='#about' className='hover:text-blue-500'>About</a>
             </ul>
             <ul className='sm:invisible md:visible md:mt-[-1.5rem] md:mr-[2rem] md:gap-[1rem] lg:gap-[3rem] lg:mt-[-1.8rem] xl:mr-[10rem] text-white flex justify-end'>
                 <IoSearch className='sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' />

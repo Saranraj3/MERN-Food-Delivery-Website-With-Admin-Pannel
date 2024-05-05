@@ -3,7 +3,7 @@ import menu from '../../Assets/FoodMenu';
 
 const FoodMenu = ({ category, setCategory }) => {
     return (
-        <div className='sm:m-2 sm:mt-5 md:mt-[2rem] lg:mt-[3rem] text-white '>
+        <div className='sm:m-2 sm:mt-5 md:mt-[2rem] lg:mt-[3rem] text-white' id='menu'>
             <h1 className='sm:text-lg md:text-2xl cursor-pointer text-center font-bold font-sedan'>Explore Our Incredible Menu </h1>
             <div className='sm:mt-5 sm:gap-2 sm:grid sm:grid-cols-3 sm:justify-between sm:items-center md:m-5 md:gird md:grid-cols-6 md:mt-[2rem] md:gap-[3rem] lg:grid lg:grid-cols-9 lg:gap-3 xl:gap-5'>
                 {menu.map((item, index) => (

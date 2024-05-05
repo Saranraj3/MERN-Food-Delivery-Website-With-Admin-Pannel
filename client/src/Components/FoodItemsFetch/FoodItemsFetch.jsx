@@ -11,7 +11,7 @@ function FoodItemsFetch({ id, image, name, description, price }) {
 
 
   return (
-    <div>
+    <div id='service'>
       <img className='sm:mt-3 cursor-pointer w-[100%] rounded-lg' src={image} alt="" />
       {!cartItems[id]
         ? <button onClick={() => AddToCart(id)}><IoMdAdd className='cursor-pointer mt-3 bg-white rounded-xl size-5 text-black' /></button>
