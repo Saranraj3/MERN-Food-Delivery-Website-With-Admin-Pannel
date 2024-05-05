@@ -29,13 +29,13 @@ function Navbar() {
                     <li className='sm:mt-5 sm:border-b sm:border-gray-800 sm:ml-3 hover:text-blue-500'>About</li>
                 </ul>
             </div>
-            <ul className='sm:invisible md:visible md:mt-[-2rem] md:gap-[2rem] lg:gap-[4rem] lg:text-lg font-bold font-serif text-white cursor-pointer flex justify-center '>
+            <ul className='sm:invisible md:visible md:mt-[-2rem] md:gap-[2rem] lg:gap-[4rem] lg:text-lg xl:mr-[6rem] font-bold font-serif text-white cursor-pointer flex justify-center '>
                 <li className='hover:text-blue-500'>Home</li>
                 <li className='hover:text-blue-500'>Menu</li>
                 <li className='hover:text-blue-500'>Service</li>
                 <li className='hover:text-blue-500'>About</li>
             </ul>
-            <ul className='sm:invisible md:visible md:mt-[-1.5rem] md:mr-[2rem] md:gap-[1rem] lg:gap-[3rem] lg:mt-[-1.8rem] text-white flex justify-end'>
+            <ul className='sm:invisible md:visible md:mt-[-1.5rem] md:mr-[2rem] md:gap-[1rem] lg:gap-[3rem] lg:mt-[-1.8rem] xl:mr-[10rem] text-white flex justify-end'>
                 <IoSearch className='sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' />
                 <IoCartSharp className='sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' />
                 <MdAccountCircle className='sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' />
