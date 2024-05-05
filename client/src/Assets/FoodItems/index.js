@@ -27,7 +27,7 @@ let Food_List = [
         image: chickenrice,
         name: 'Chicken Rice',
         category:'Chicken',
-        description: 'Chicken Rice Is The Best Rice In The World',
+        description: 'Delicious meals are tasty',
         price: '449'
     },
     {
@@ -35,7 +35,7 @@ let Food_List = [
         image: chickenbiriyani,
         name: 'Chicken Biriyani',
         category:'Chicken',
-        description: 'Chicken Biriyani Is The Best Biriyani In The World',
+        description: 'Delicious meals are tasty',
         price: '550'
     },
     {
@@ -43,14 +43,14 @@ let Food_List = [
         image: chickenstick,
         name: 'Chicken Stick Fry',
         category:'Chicken',
-        description: 'Chicken Stick Fry Is The Best Stick Fry In The World',
+        description: 'Delicious meals are tasty',
         price: '595'
     },
     {
         id: 4,
         image: noodles,
         name: 'Noodles',
-        description: 'Noodles Is The Best Delicious Noodles In The World',
+        description: 'Delicious meals are tasty',
         price: '500'
     },
     {
@@ -58,7 +58,7 @@ let Food_List = [
         image: chickencurry,
         name: 'Chicken Curry',
         category:'Chicken',
-        description: 'Chicken Curry Is The Best Curry In The World',
+        description: 'Delicious meals are tasty',
         price: '499'
     },
     {
@@ -66,7 +66,7 @@ let Food_List = [
         image: chickenfriedrice,
         name: 'Chicken Fryed Rice',
         category:'Chicken',
-        description: 'Chicken Fryed Rice Is The Best Fryed Rice In The World',
+        description: 'Delicious meals are tasty',
         price: '600'
     },
     {
@@ -74,7 +74,7 @@ let Food_List = [
         image: chickenleg,
         name: 'Chicken Leg',
         category:'Chicken',
-        description: 'Chicken Leg Is The Best Leg In The World',
+        description: 'Delicious meals are tasty',
         price: '399'
     },
     {
@@ -82,7 +82,7 @@ let Food_List = [
         image: biffe,
         name: 'Biffe Fry',
         category:'Biffe',
-        description: 'Biffe Fry Is The Best Meat In The World',
+        description: 'Delicious meals are tasty',
         price: '400'
     },
     {
@@ -90,7 +90,7 @@ let Food_List = [
         image: buttermasaladosa,
         name: 'Butter Masala Dosa',
         category:'Dosa',
-        description: 'Butter Masala Dosa Is The Best Dosa In The World',
+        description: 'Delicious meals are tasty',
         price: '460'
     },
     {
@@ -98,21 +98,21 @@ let Food_List = [
         image: fryedrice,
         name: 'Fryed Rice',
         category:'Rice',
-        description: 'Fryed Rice Is The Best Fryed Rice In The World',
+        description: 'Delicious meals are tasty',
         price: '405'
     },
     {
         id: 11,
         image: kappa,
         name: 'Kappa',
-        description: 'Kappa Is The Best Kappa In The World',
+        description: 'Delicious meals are tasty',
         price: '399'
     },
     {
         id: 12,
         image: noodleschopstick,
         name: 'Noodles with Tomato',
-        description: 'Noodles Is The Best Tomato Noodles In The World',
+        description: 'Delicious meals are tasty',
         price: '448'
     },
     {
@@ -120,7 +120,7 @@ let Food_List = [
         image: pancake,
         name: 'Pancake',
         category:'Cake',
-        description: 'Pancake Is The Best Swetest Cake In The World',
+        description: 'Delicious meals are tasty',
         price: '583'
     },
     {
@@ -128,7 +128,7 @@ let Food_List = [
         image: pizza,
         name: 'Pizza',
         category:'Pizza',
-        description: 'Pizza Is The Best Pizza In The World',
+        description: 'Delicious meals are tasty',
         price: '459'
     },
     {
@@ -136,7 +136,7 @@ let Food_List = [
         image: puttukadala,
         name: 'Puttu Kadala Curry',
         category:'Puttu Kadala Curry',
-        description: 'Puttu Kadala Curry Is The Best Kadala ',
+        description: 'Delicious meals are tasty',
         price: '410'
     },
     {
@@ -144,37 +144,36 @@ let Food_List = [
         image: vegitable,
         name: 'Vegitable Fryed Rice',
         category:'Vegitable',
-        description: 'Vegitable Fryed Rice Is The Best Vegitable Rice In The World',
+        description: 'Delicious meals are tasty',
         price: '509'
     },
-
     {
         id: 17,
         image: puttuegg,
         name: 'Puttu Egg Curry',
         category:'Puttu',
-        description: 'Puttu Egg Curry Is The Best Egg Curry In The World',
+        description: 'Delicious meals are tasty',
         price: '300'
     },
     {
         id: 18,
         image: puri,
         name: 'Puri',
-        description: 'Puri Is The Best Puri In The World',
+        description: 'Delicious meals are tasty',
         price: '590'
     },
     {
         id: 19,
         image: pasta,
         name: 'Pasta',
-        description: 'Pasta Is The Best Pasta In The World',
+        description: 'Delicious meals are tasty',
         price: '358'
     },
     {
         id: 20,
         image: burger,
         name: 'Burger',
-        description: 'Burger Is The Best Burger In The World',
+        description: 'Delicious meals are tasty',
         price: '400'
     },
 
