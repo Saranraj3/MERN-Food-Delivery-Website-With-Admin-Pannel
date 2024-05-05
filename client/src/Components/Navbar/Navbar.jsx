@@ -13,10 +13,10 @@ function Navbar() {
         setNav(!nav)
     }
     return (
-        <div className='sm:h-[2rem] sticky top-0 z-50'>
+        <div className='sm:h-[2rem] lg:h-[3rem] sticky top-0 z-50'>
             <span className='flex'>
-                <SiIfood className='sm:mt-1 sm:ml-5 cursor-pointer text-blue-500 size-[1.5rem]' />
-                <h1 className='sm:text-2xl sm:ml-2 md:ml-2 md:text-4xl cursor-pointer font-sedan font-bold text-blue-500'>Foody</h1>
+                <SiIfood className='sm:mt-1 sm:ml-5 sm:size-[1.8rem] lg:mt-2 cursor-pointer text-blue-500' />
+                <h1 className='sm:text-2xl sm:ml-2 md:ml-2 md:text-3xl lg:mt-1 cursor-pointer font-sedan font-bold text-blue-500'>Foody</h1>
             </span>
             <div onClick={HandleNav} className='sm:mt-1 sm:mr-3 md:invisible flex justify-end'>
                 {!nav ? <IoMdClose className='sm:mt-[-2rem] flex text-white size-6 ' /> : <IoMdMenu className='sm:mt-[-2rem] flex text-white size-6 ' />}
@@ -29,16 +29,16 @@ function Navbar() {
                     <li className='sm:mt-5 sm:border-b sm:border-gray-800 sm:ml-3 hover:text-blue-500'>About</li>
                 </ul>
             </div>
-            <ul className='sm:invisible md:visible md:mt-[-2rem] md:gap-[2rem] font-bold font-serif text-white cursor-pointer flex justify-center '>
+            <ul className='sm:invisible md:visible md:mt-[-2rem] md:gap-[2rem] lg:gap-[4rem] lg:text-lg font-bold font-serif text-white cursor-pointer flex justify-center '>
                 <li className='hover:text-blue-500'>Home</li>
                 <li className='hover:text-blue-500'>Menu</li>
                 <li className='hover:text-blue-500'>Service</li>
                 <li className='hover:text-blue-500'>About</li>
             </ul>
-            <ul className='sm:invisible md:visible md:mt-[-1.5rem] md:mr-[2rem] md:gap-[1rem] text-white flex justify-end'>
-                <IoSearch className='cursor-pointer hover:text-blue-500 size-[1.5rem]' />
-                <IoCartSharp className='cursor-pointer hover:text-blue-500 size-[1.5rem]' />
-                <MdAccountCircle className='cursor-pointer hover:text-blue-500 size-[1.5rem]' />
+            <ul className='sm:invisible md:visible md:mt-[-1.5rem] md:mr-[2rem] md:gap-[1rem] lg:gap-[3rem] lg:mt-[-1.8rem] text-white flex justify-end'>
+                <IoSearch className='sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' />
+                <IoCartSharp className='sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' />
+                <MdAccountCircle className='sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' />
             </ul>
         </div>
     )
