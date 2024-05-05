@@ -43,10 +43,6 @@ let menu = [
         name: 'Puttu '
     },
     {
-        image: samosa,
-        name: 'Samosa'
-    },
-    {
         image: vegitablefriedrice,
         name: 'Vegitable'
     },

@@ -3,13 +3,13 @@ import menu from '../../Assets/FoodMenu';
 
 const FoodMenu = ({ category, setCategory }) => {
     return (
-        <div className='text-white mt-[4rem]'>
-            <h1 className='cursor-pointer text-center text-2xl font-bold font-sedan'>Explore Our Incredible Menu </h1>
-            <div className='mt-[3rem] justify-center flex gap-[3rem]'>
+        <div className='sm:m-2 sm:mt-5 md:mt-[4rem] text-white '>
+            <h1 className='sm:text-lg md:text-2xl cursor-pointer text-center font-bold font-sedan'>Explore Our Incredible Menu </h1>
+            <div className='sm:mt-5 sm:gap-2 sm:grid sm:grid-cols-3 sm:justify-between sm:items-center md:mt-[3rem] md:gap-[3rem] flex '>
                 {menu.map((item, index) => (
                     <div onClick={() => setCategory(prev => prev === item.name ? "All" : item.name)} key={index}>
-                        <img className={`cursor-pointer rounded-full hover:rotate-45 h-[5rem] ${category === item.name ? 'active' : ''}`} src={item.image} alt="" />
-                        <h1 className='cursor-pointer mt-1 font-bold font-Arimo text-center'>{item.name}</h1>
+                        <img className={`md:h-[5rem] cursor-pointer rounded-full hover: ${category === item.name ? 'active' : ''}`} src={item.image} alt="" />
+                        <h1 className='sm:mt-1 md:mt-1  cursor-pointer font-bold font-Arimo text-center'>{item.name}</h1>
                     </div>
                 ))}
             </div>
