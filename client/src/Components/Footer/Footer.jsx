@@ -8,13 +8,13 @@ import { FaRegCopyright } from "react-icons/fa";
 
 function Footer() {
     return (
-        <div className='sm:mt-5 md:mt-[8rem]' id='about'>
+        <div className='sm:mt-[4rem] md:mt-[8rem]' id='about'>
             <div>
-                <span className='flex'>
+                <p className='sm:text-center flex'>
                     <SiIfood className='mt-1 ml-5 cursor-pointer text-blue-500 size-[1.5rem]' />
                     <h1 className='sm:text-2xl md:text-4xl ml-2 cursor-pointer font-sedan font-bold text-blue-500'>Foody</h1>
-                </span>
-                <div className='sm:mt-5 md:mt-[2rem] text-white ml-5 font-bold xl:text-center xl:mr-[35rem] '>
+                </p>
+                <div className='sm:mt-5 sm:text-center md:mt-[2rem] md:text-left xl:text-center xl:mr-[35rem] text-white ml-5 font-bold '>
                     <h1 className='sm:text-xl md:text-xl cursor-pointer font-sedan'>Company</h1>
                     <ul className='sm:mt-2 md:mt-5'>
                         <li className='mt-1 cursor-pointer font-Arimo'>Future of The Company</li>
