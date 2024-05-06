@@ -5,10 +5,9 @@ const app = express();
 
 //MongoDB Connection
 ConnectDatabase();
-const PORT = process.env.PORT || 5040;
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
+app.listen(5000, () => {
+    console.log("Server is listening on port 5000");
 });
 
 app.get('/', (req, res) => {
