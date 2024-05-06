@@ -33,7 +33,7 @@ let Food_List = [
     {
         id: 2,
         image: chickenbiriyani,
-        name: 'Chicken Biriyani',
+        name: 'Chicken Rice',
         category:'Chicken',
         description: 'Delicious meals are tasty',
         price: '550'
@@ -41,7 +41,7 @@ let Food_List = [
     {
         id: 3,
         image: chickenstick,
-        name: 'Chicken Stick Fry',
+        name: 'Chicken Rice',
         category:'Chicken',
         description: 'Delicious meals are tasty',
         price: '595'
@@ -49,14 +49,14 @@ let Food_List = [
     {
         id: 4,
         image: noodles,
-        name: 'Noodles',
+        name: 'Chicken Rice',
         description: 'Delicious meals are tasty',
         price: '500'
     },
     {
         id: 5,
         image: chickencurry,
-        name: 'Chicken Curry',
+        name: 'Chicken Rice',
         category:'Chicken',
         description: 'Delicious meals are tasty',
         price: '499'
@@ -64,7 +64,7 @@ let Food_List = [
     {
         id: 6,
         image: chickenfriedrice,
-        name: 'Chicken Fryed Rice',
+        name: 'Chicken Rice',
         category:'Chicken',
         description: 'Delicious meals are tasty',
         price: '600'
@@ -72,7 +72,7 @@ let Food_List = [
     {
         id: 7,
         image: chickenleg,
-        name: 'Chicken Leg',
+        name: 'Chicken Rice',
         category:'Chicken',
         description: 'Delicious meals are tasty',
         price: '399'
@@ -80,7 +80,7 @@ let Food_List = [
     {
         id: 8,
         image: biffe,
-        name: 'Biffe Fry',
+        name: 'Chicken Rice',
         category:'Biffe',
         description: 'Delicious meals are tasty',
         price: '400'
@@ -88,7 +88,7 @@ let Food_List = [
     {
         id: 9,
         image: buttermasaladosa,
-        name: 'Butter Masala Dosa',
+        name: 'Chicken Rice',
         category:'Dosa',
         description: 'Delicious meals are tasty',
         price: '460'
@@ -96,7 +96,7 @@ let Food_List = [
     {
         id: 10,
         image: fryedrice,
-        name: 'Fryed Rice',
+        name: 'Chicken Rice',
         category:'Rice',
         description: 'Delicious meals are tasty',
         price: '405'

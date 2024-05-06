@@ -24,10 +24,12 @@ function Navbar() {
             </div>
             <div className={!nav ? 'text-white fixed sm:left-0 sm:top-0 sm:w-[60%] sm:h-[15rem] sm:border-r border-r-gray-800 ease-in-out duration-200 sm:visible lg:invisible' : 'fixed left-[-100%]'}>
                 <ul className='lg:mt-[-2rem] lg:gap-[5rem] font-bold font-serif text-white cursor-pointer '>
-                    <li className='sm:mt-5 sm:border-b sm:border-gray-800 sm:ml-3 hover:text-blue-500'>Home</li>
+                    <Link to='/' className='sm:mt-5 sm:border-b sm:border-gray-800 sm:ml-3 hover:text-blue-500'>Home</Link>
                     <li className='sm:mt-5 sm:border-b sm:border-gray-800 sm:ml-3 hover:text-blue-500'>Menu</li>
                     <li className='sm:mt-5 sm:border-b sm:border-gray-800 sm:ml-3 hover:text-blue-500'>Service</li>
                     <li className='sm:mt-5 sm:border-b sm:border-gray-800 sm:ml-3 hover:text-blue-500'>About</li>
+                    <Link to='/cart'><IoCartSharp className='sm:mt-5 ml-3 sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' /></Link>
+
                 </ul>
             </div>
             <ul className='sm:invisible md:visible md:mt-[-2rem] md:gap-[2rem] lg:gap-[4rem] lg:text-lg xl:mr-[6rem] font-bold font-serif text-white cursor-pointer flex justify-center '>
@@ -38,7 +40,7 @@ function Navbar() {
             </ul>
             <ul className='sm:invisible md:visible md:mt-[-1.5rem] md:mr-[2rem] md:gap-[1rem] lg:gap-[3rem] lg:mt-[-1.8rem] xl:mr-[10rem] text-white flex justify-end'>
                 <IoSearch className='sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' />
-                <IoCartSharp className='sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' />
+                <Link to='/cart'><IoCartSharp className='sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' /></Link>
                 <Link to='/login'><MdAccountCircle className='sm:size-[1.5rem] lg:size-[1.8rem] cursor-pointer hover:text-blue-500 ' /></Link>
             </ul>
         </div>
