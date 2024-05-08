@@ -1,19 +1,58 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import API from '../../Common';
+import { toast } from 'react-toastify';
 
 function Login() {
+
+    const navigate = useNavigate();
+    const [data, setData] = useState({
+        email: '',
+        password: '',
+    })
+
+    const HandleOnChange = (e) => {
+        const { name, value } = e.target
+        setData((preve) => {
+            return {
+                ...preve,
+                [name]: value
+            };
+        });
+    };
+
+    const HandleOnSubmit = async (e) => {
+        e.preventDefault()
+        const dataresponse = await fetch(API.Login.url, {
+            method: API.Login.method,
+            credentials: 'include',
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        const dataAPI = await dataresponse.json()
+        if (dataAPI.success) {
+            toast.success(dataAPI.message)
+            navigate('/')
+        }
+        if (dataAPI.error) {
+            toast.error(dataAPI.message)
+        }
+    }
+
     return (
         <div className='mt-[3rem] text-white'>
-            <form action="">
+            <form onSubmit={HandleOnSubmit} action="">
                 <div>
                     <h1 className='xl:mt-5 font-bold font-Arimo text-center text-2xl '>Login</h1>
                 </div>
                 <div>
                     <div className='mt-4 h-[2.3rem] flex justify-center'>
-                        <input className='border pl-2' type="text" placeholder='Name' />
+                        <input className='border pl-2' type="password" placeholder='Password' name='password' value={data.password} onChange={HandleOnChange} />
                     </div>
                     <div className='mt-4 h-[2.3rem] flex justify-center'>
-                        <input className='border pl-2' type="email" placeholder='Email' />
+                        <input className='border pl-2' type="email" placeholder='Email' name='email' value={data.email} onChange={HandleOnChange} />
                     </div>
                 </div>
                 <div className='mt-4 flex justify-center text-lg font-bold'>

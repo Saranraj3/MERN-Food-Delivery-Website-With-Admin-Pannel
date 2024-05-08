@@ -8,7 +8,6 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 
-
 function App() {
   const url = 'http://localhost:5000'
 

@@ -12,10 +12,14 @@ ConnectDatabase();
 
 // Middleware
 app.use(express.json()); // Parse JSON bodies
-app.use(cors()); // Enable CORS
+app.use(cors({
+    origin: process.env.CLIENT_URL,
+    methods: 'GET,POST,PUT,DELETE',
+    credentials: true
+}));
 
 // Routes
-app.use('/api',router);
+app.use('/api', router);
 app.use('/api/food', foodrouter);
 app.use('/images', express.static('Uploads'));
 
