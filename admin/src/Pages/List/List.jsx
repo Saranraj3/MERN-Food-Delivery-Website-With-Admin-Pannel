@@ -32,7 +32,7 @@ function List({ url }) {
 
   return (
     <div className='mt-[-11.5rem] text-white text-center'>
-      <div className='flex text-xl font-bold justify-center gap-[5rem]'>
+      <div className='sm:text-xs sm:gap-[1rem] md:text-xl md:gap-[5rem] font-bold justify-center flex '>
         <p className='cursor-pointer'>Product</p>
         <p className='cursor-pointer'>Name</p>
         <p className='cursor-pointer'>Category</p>
@@ -41,8 +41,8 @@ function List({ url }) {
       </div>
       {list.map((item, index) => {
         return (
-          <div key={index} className='mt-[2rem] flex text-lg justify-center gap-[5rem]'>
-            <img className='ml-[-3rem] h-[4rem]' src={`${url}/images/` + item.image} alt="" />
+          <div key={index} className='sm:gap-2 md:mt-[2rem] md:gap-[5rem] md:text-lg flex justify-center'>
+            <img className='sm:h-[3rem] md:ml-[-3rem] md:h-[4rem]' src={`${url}/images/` + item.image} alt="" />
             <p className='mt-3 cursor-pointer'>{item.name}</p>
             <p className='mt-3 cursor-pointer'>{item.category}</p>
             <p className='mt-3 cursor-pointer flex'><LuIndianRupee className='mt-1' /> {item.price}</p>
