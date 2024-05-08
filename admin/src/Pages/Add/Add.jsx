@@ -5,9 +5,7 @@ import { toast } from 'react-toastify';
 
 function Add() {
 
-
   const [file, setFile] = useState(false);
-
   const handlchange = (e) => {
     console.log(e.target.files)
     setFile(e.target.files[0])
@@ -20,14 +18,11 @@ function Add() {
     category: 'Meat'
   });
 
-
   const OnChangeHandle = (event) => {
     const name = event.target.name;
     const value = event.target.value;
     setData(data => ({ ...data, [name]: value }))
   }
-
-  const URL = 'http://localhost:5000'
 
   const onSubmitHandle = async (event) => {
     event.preventDefault();
@@ -43,8 +38,8 @@ function Add() {
         'Content-Type': 'multipart/form-data',
       },
     });
-    if (response.data.success) {
 
+    if (response.data.success) {
       setData({
         name: '',
         description: '',
@@ -62,7 +57,7 @@ function Add() {
     <div>
       <form onSubmit={onSubmitHandle} className='text-white mt-[-12rem]'>
         <div className='text-center'>
-          <h1 className='font-bold text-2xl'>Upload Image</h1>
+          <h1 className='cursor-pointer font-bold text-2xl'>Upload Image</h1>
         </div>
         <div>
           <div className='justify-center flex'>
