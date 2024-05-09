@@ -7,7 +7,7 @@ import { LuIndianRupee } from "react-icons/lu";
 function Cart() {
   const navigate = useNavigate();
 
-  const { cartItems, Food_List, RemoveFromCart } = useContext(Context);
+  const { cartItems, Food_List, RemoveFromCart,url } = useContext(Context);
   return (
     <div className='sm:mt-5 md:mt-[4rem] text-white'>
       <div>
@@ -26,7 +26,7 @@ function Cart() {
             return (
               <div>
                 <div className='sm:h-[2rem] sm:m-[0.3rem] md:h-[3rem] md:m-[1rem] lg:h-[4rem] flex justify-between '>
-                  <img src={item.image} alt="" />
+                  <img src={url+"/images/"+item.image} alt="" />
                   <h1 className='sm:text-sm md:mt-5 md:ml-[-5rem] lg:ml-[-9rem] '>{item.name}</h1>
                   <p className='sm:text-sm md:mt-5 md:ml-[-5rem] lg:ml-[-3rem] flex'><LuIndianRupee className='mt-1' />{item.price}</p>
                   <p className='sm:text-sm md:mt-5'>{cartItems[item.id]}</p>

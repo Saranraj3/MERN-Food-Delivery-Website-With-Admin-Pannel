@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import { GrStar } from "react-icons/gr";
 import { RiStarLine } from "react-icons/ri";
 import { LuIndianRupee } from "react-icons/lu";
@@ -7,12 +7,11 @@ import { FaMinus } from "react-icons/fa";
 import { Context } from '../../Context/Context';
 
 function FoodItemsFetch({ id, image, name, description, price }) {
-  const { cartItems, AddToCart, RemoveFromCart } = useContext(Context);
-
+  const { cartItems, AddToCart, RemoveFromCart, url } = useContext(Context);
 
   return (
     <div id='service'>
-      <img className='sm:mt-3 cursor-pointer w-[100%] rounded-lg' src={image} alt="" />
+      <img className='sm:mt-3 cursor-pointer w-[100%] rounded-lg' src={url+"/images/"+image} alt="" />
       {!cartItems[id]
         ? <button onClick={() => AddToCart(id)}><IoMdAdd className='cursor-pointer mt-3 bg-white rounded-xl size-5 text-black' /></button>
         : <div className='flex'>
@@ -32,7 +31,7 @@ function FoodItemsFetch({ id, image, name, description, price }) {
       <p className='cursor-pointer'>{description}</p>
       <p className='flex cursor-pointer'><LuIndianRupee className='mt-1' />{price}</p>
     </div>
-  )
+  );
 }
 
-export default FoodItemsFetch
+export default FoodItemsFetch;
