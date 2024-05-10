@@ -11,16 +11,12 @@ function FoodItemsFetch({ id, image, name, description, price }) {
 
   return (
     <div id='service'>
-      <img className='sm:mt-3 cursor-pointer w-[100%] rounded-lg' src={url+"/images/"+image} alt="" />
+      <img className='sm:mt-3 cursor-pointer w-[100%] rounded-lg' src={url + "/images/" + image} alt="" />
       {!cartItems[id]
-        ? <button onClick={() => AddToCart(id)}><IoMdAdd className='cursor-pointer mt-3 bg-white rounded-xl size-5 text-black' /></button>
-        : <div className='flex'>
-          <button onClick={() => RemoveFromCart(id)}><FaMinus className='cursor-pointer bg-white rounded-xl size-5 text-black' /></button>
-          <p className='cursor-pointer mt-1 pt-[-1rem] text-center bg-white w-[2rem] rounded-xl text-black'>{cartItems[id]}</p>
-          <button onClick={() => AddToCart(id)}><IoMdAdd className='cursor-pointer bg-white rounded-xl size-5 text-black' /></button>
-        </div>
+        ? <button onClick={() => AddToCart(id)} className='mt-4 h-[2rem] w-[8rem] rounded-md bg-blue-900'>ADD TO CART</button>
+        : <button onClick={() => RemoveFromCart(id)} className='mt-4 h-[2rem] w-[8rem] rounded-md bg-blue-900 '>REMOVE CART</button>
       }
-      <h1 className='cursor-pointer'>{name}</h1>
+      <h1 className='mt-2 cursor-pointer'>{name}</h1>
       <p className='cursor-pointer flex text-orange-400'>
         <GrStar />
         <GrStar />

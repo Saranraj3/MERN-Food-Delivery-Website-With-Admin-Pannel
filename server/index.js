@@ -18,6 +18,7 @@ app.use(cors({
     credentials: true
 }));
 
+
 // Routes
 app.use('/api', router);
 app.use('/api/food', foodrouter);

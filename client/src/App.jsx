@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route,ScrollRestoration } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import Order from './Pages/Order/Order';
@@ -43,7 +43,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/login' element={< Login />} />
         <Route path='/signup' element={<Signup />} />
-        <Route path='/cart' element={<Cart />} />
+        <Route path='/cart'  element={<Cart />} />
         <Route path='/order' element={<Order />} />
       </Routes>
       <Footer />
